@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple js calculator</title>
+</head>
+<body>
+<div id="frame">
+    <table class="table">
+            <thead>
+            <tr>
+            <th colspan ="6"><input id="result" placeholder="0" type="text" value="0"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="2"><button class="btn_bot_row" id="cls" onclick="cls()" value="C"><b>C</b></button></td>
+                <td colspan="2"><button class="btn_bot_row" id="sub" onclick="sub()" value="&#8592;"><b>&#8592;</b></button></td>
+                <td colspan="2"><button class="btn_bot_row" id="solve" onclick="solve()" value="equal"><b>=</b></button></td>
+        </tr>
+            <tr>
+            <td><button class="btns" onclick="this.add('1')" value="1">1</button></td>
+            <td><button class="btns" onclick="add('2')" value="2">2</button></td>
+            <td><button class="btns" onclick="add('3')" value="3">3</button></td>
+            <td><button class="btn" onclick="add('+')" value="add">+</button></td>
+            <td><button class="btn" onclick="add('-')" value="sub">-</button></td>
+            <td><button class="btn" onclick="add('*')" value="multi">*</button></td>
+        </tr>
+            <tr>
+            <td><button class="btns" onclick="add('4')" value="4">4</button></td>
+            <td><button class="btns" onclick="add('5')" value="5">5</button></td>
+            <td><button class="btns" onclick="add('6')" value="6">6</button></td>
+            <td><button class="btn" onclick="add('/')" value="divide">/</button></td>
+            <td><button class="btn" onclick="abs()" value="abs">abs</button></td>
+            <td><button class="btn" onclick="add('3.14159265359')" value="&#960;">&#960;</button></td>
+        </tr>
+            <tr>
+            <td><button class="btns" onclick="add('7')" value="7">7</button></td>
+            <td><button class="btns" onclick="add('8')" value="8">8</button></td>
+            <td><button class="btns" onclick="add('9')" value="9">9</button></td>
+            <td><button class="btn" onclick="exp()" value="exp">exp</button></td>
+            <td><button class="btn" onclick="strong()" value="x!">x!</td>
+            <td><button class="btn" onclick="log()" value="log">log</button></td>
+        </tr>
+            <tr>
+            <td><button class="btn" onclick="dot('.')" value=".">.</button></td>
+            <td><button class="btns" onclick="add('0')" value="0">0</button></td>
+            <td><button class="btn" onclick="chan()" value="chan">&plusmn;</button></td>
+            <td><button class="btn" onclick="ln()" value="ln">ln</button></td>
+            <td><button class="btn" onclick="sqrt()" value="sqrt">√</button></td>
+            <td><button class="btn" onclick="square()" value="x2">x2</button></td>
+        </tr>
+            <tr>
+            <td><button class="btn" onclick="add('(')" value="(">(</button></td>
+            <td><button class="btn" onclick="add(')')" value=")">)</button></td>
+            <td><button class="btn" onclick="add('%')" value="perce">%</button></td>
+            <td><button class="btn" onclick="sin()" value="sin">sin</button></td>
+            <td><button class="btn" onclick="cos()" value="cos">cos</button></td>
+            <td><button class="btn" onclick="tan()" value="tan">tan</button></td>
+        </tr>
+            </tbody>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</body>
+</html>
